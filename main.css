@@ -4,9 +4,30 @@ body {
 section {
 	height: 100vh;
 	width: 100vw;
+	background-size: cover;
+	align-content: center;
+	justify-content: center;
 }
 
-#hero {
-	background-image: url('file:///Users/vedantc98/Desktop/Code/SWC/assignment_1/hero.jpg');
-	background-size: cover;
+#top {
+	background-image: url('file:///Users/vedantc98/Desktop/Code/SWC/assignment_1/top.jpg');
+}
+
+#top #top-content {
+	position: absolute;
+	text-align: center;
+	top: 40%;
+	width: 100%;
+}
+
+#top h1 {
+	justify-content: center;
+}
+
+#top p {
+	align-self: center;
+}
+
+#intro {
+	background-image: url('file:///Users/vedantc98/Desktop/Code/SWC/assignment_1/intro.jpg')
 }
