@@ -7,6 +7,11 @@ section {
 	background-size: cover;
 	align-content: center;
 	justify-content: center;
+	text-align: center;
+}
+
+p {
+	margin: 0;
 }
 
 #top {
@@ -26,6 +31,16 @@ section {
 
 #top p {
 	align-self: center;
+}
+
+#timer {
+	background-color: #EaEaEa;
+	font-size: 40px;
+	height: 20vh;
+}
+
+#timer label {
+	padding: 0px 3px 0px 3px;
 }
 
 #intro {
