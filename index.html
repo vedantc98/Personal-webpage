@@ -1,16 +1,47 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link href="file:///Users/vedantc98/Desktop/Code/SWC/assignment_1/main.css" rel="stylesheet">
+		<link href="main.css" rel="stylesheet">
 		<title>
 			Vedant Chakravadhanula
 		</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	</head>
 	<body>
 
+		<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" id="menu">
+			<div class="container-fluid">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+
+          		<!--  Code for the hamburger icon-->
+          		<span class="sr-only">Toggle navigation</span>
+          		<span class="icon-bar"></span>
+          		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		</button>
+
+        		<a class="navbar-brand" href="#">Home</a>
+
+      		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+            			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">QuickNav <span class="caret"></span></a>
+            			<ul class="dropdown-menu">
+             				<li><a href="#">Introduction</a></li>
+                			<li><a href="#timer">Get Started</a></li>
+              				<li><a href="#reach-out">Reach Out</a></li>
+            			</ul>
+          			</li>
+          			<li><a href="#">About Me</a></li>
+
+				</ul>
+			</div>
+			</div>
+		</nav>
+
 		<!-- Top Section -->
 		<section id="top">
-			<div id="top-content">
+			<div class="container" id="top-content">
 			<h1>Vedant Chakravadhanula</h1>
 			<p>Hi, welcome to my website. Documenting my experience at IIT Guwahati so far, here's a quick look at the highlights of my time in this institute!</p>
 			<button id="get-started">
@@ -20,9 +51,11 @@
 		</section>
 
 		<section id="timer">
+			<div class="container">
 			<p><em> Time since I joined IIT Guwahati </em></p>
 			<label id="years"></label><label id="days"></label><label id="hours"></label><label id="minutes"></label><label id="seconds"></label>
-			<script type="text/javascript" src="file:///Users/vedantc98/Desktop/Code/SWC/assignment_1/timer.js"></script>
+			<script type="text/javascript" src="timer.js"></script>
+			</div>
 		</section>
 
 		<!-- Introduction -->
@@ -41,6 +74,11 @@
 		<section id="footer">
 
 		</section>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 
 	</body>
 

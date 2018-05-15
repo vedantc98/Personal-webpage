@@ -15,7 +15,7 @@ p {
 }
 
 #top {
-	background-image: url('file:///Users/vedantc98/Desktop/Code/SWC/assignment_1/top.jpg');
+	background-image: url('top.jpg');
 }
 
 #top #top-content {
@@ -34,6 +34,7 @@ p {
 }
 
 #timer {
+	top: 50%;
 	background-color: #EaEaEa;
 	font-size: 40px;
 	height: 20vh;
@@ -44,5 +45,5 @@ p {
 }
 
 #intro {
-	background-image: url('file:///Users/vedantc98/Desktop/Code/SWC/assignment_1/intro.jpg')
+	background-image: url('intro.jpg')
 }
