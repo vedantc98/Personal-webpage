@@ -159,6 +159,10 @@ i {
 	top: 40%;
 }
 
+#about-main p {
+	font-size : 2em;
+}
+
 #about-content {
 	display: flex;
 	flex-direction: column;
@@ -227,4 +231,8 @@ i {
 
 #reach-out div {
 	overflow: scroll;
+}
+
+p a {
+	display: inline;
 }
