@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="shortcut icon" type="image/png" href="favicon.png">		
+		<link rel="shortcut icon" type="image/png" href="favicon.png">
 		<link href="main.css" rel="stylesheet">
-		<title>About Me</title>
+		<title>Reach Out</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<!-- font-awesome icon library -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -31,11 +31,11 @@
                 			<li><a href="#timer">Get Started</a></li>
               				<li><a href="#intro">Introduction</a></li>
               				<li><a href="#reach-out">Reach out</a></li>
-            			</ul> 
-          			</li>-->
+            			</ul>
+          			</li> -->
           			<li><a href="about.html">About Me</a></li>
           			<li><a href="experience.html">Experience</a></li>
-					<li><a href="reach-out.html">Reach Out</a></li>
+          			<li><a href="reach-out.html">Reach Out</a></li>
 
 
 				</ul>
@@ -43,22 +43,51 @@
 			</div>
 		</nav>
 
-		<section id="about-top">
-			<div class="container-fluid" id="about-top-content">
-				<h1> About Me</h1>
-				<p> Learn more about who I am outside of work </p>
+		<section id="reach-out-top">
+			<div class="container">
+				<h2>Check out my social on the bottom right of the page, or fill out this form to message me directly</h2>
+				<button onclick="show_form()" type="btn btn-primary">Show form</button>
 			</div>
-		</section>
-
-		<section id="about-main">
-			<div class="container-fluid" id="about-content">
-			<div class="container" id="about-paras">
-				<div class="container">
-					<p class="intro-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna lectus, sodales sit amet nisi id, placerat imperdiet leo. Nulla faucibus lorem convallis, sagittis felis id, dignissim nibh. Maecenas cursus suscipit felis at laoreet. Quisque porttitor luctus facilisis. Vivamus nunc mauris, ornare at iaculis quis, tempor eu dui. Duis malesuada diam mi, vitae semper mi facilisis vitae. Quisque non elit ut turpis auctor fermentum. Proin sit amet luctus lorem. Vivamus in sapien massa. Nullam nec enim rhoncus, dictum risus in, ultrices dolor.</p>
-					<p class="intro-para">Donec malesuada tincidunt volutpat. Aliquam blandit ex cursus arcu mattis consectetur. Pellentesque finibus fermentum lobortis. In pretium cursus nibh nec consequat. Etiam sem tortor, semper aliquet semper dapibus, aliquam at ipsum. Sed ante ante, lobortis in nisi vitae, maximus egestas diam. Duis consequat facilisis elit ut consequat. Ut semper quam non elit gravida ullamcorper. Aliquam suscipit lobortis porta. Ut eu neque facilisis, sagittis nibh et, feugiat est. Praesent molestie sem at aliquet cursus. Maecenas et varius sem.</p>
-					<p class="intro-para">Nullam laoreet posuere urna, at varius turpis venenatis a. Morbi congue urna eu elit tempor, eget congue ipsum luctus. Nullam dapibus quam eget felis maximus varius. Donec sed viverra nisl. Maecenas convallis velit eget tortor porta, in vehicula leo fringilla. Nulla facilisi. Pellentesque ultrices magna consectetur velit consequat, a ullamcorper lorem porttitor.</p> 
+			<br><br>
+			<div class="container">
+				<form id="inform">
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" class="form-control" name="name" id="name" placeholder="Enter your full name">
+					</div>
+					<div class="form-group">
+						<label for="emailID">Email Address</label>
+						<input type="text" class="form-control" name="emailID" id="emailID" placeholder="Enter your email ID">
+					</div>
+					<div class="form-group">
+						<label for="phoneNo">Phone Number</label>
+						<input type="text" class="form-control" name="phoneNo" id="phoneNo" placeholder="Enter your mobile number">
+					</div>
+					<div class="form-group">
+						<label for="type_person">You are a :</label>
+						<select class="form-control" id="type_person">
+							<option>Student</option>
+							<option>Professor</option>
+							<option>Professional</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="message">Your Message </label>
+						<textarea class="form-control" id="message" placeholder="Enter your message here"></textarea>
+					</div>
+					<button onclick="hide_form" type="submit" class="btn btn-primary">Submit</button>
+				</form>
 				</div>
-			</div>
+			<script>
+				function show_form() {
+					var frm = document.getElementById("inform");
+					frm.style.display = "block";
+				}
+				function hide_form() {
+					var frm = document.getElementById("inform");
+					frm.style.display = "none";
+				}
+			</script>
 			</div>
 		</section>
 
@@ -80,5 +109,6 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script src="js/scripts.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 	</body>
 </html>

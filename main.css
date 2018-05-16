@@ -1,20 +1,45 @@
 body {
 	margin: 0px 0px 0px 0px;
 }
+
 section {
 	height: 100vh;
 	width: 100vw;
 	background-size: cover;
-	align-content: center;
-	justify-content: center;
 	text-align: center;
 	background-image: cover;
+}
+
+div {
+	overflow: scroll;
 }
 
 p {
 	margin: 0;
 	font-family: adobe-garamond-pro;
 	font-size: 1.5em;
+	font-style: italic;
+
+}
+
+h1 {
+	font-size: 7vh;
+}
+
+h2 {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+a {
+	display: block;
+	height: auto;
+}
+
+nav div {
+	overflow: visible;
 }
 
 #menu {
@@ -26,26 +51,22 @@ p {
 }
 
 
-#top #top-content {
-	position: absolute;
-	text-align: center;
-	top: 40%;
+#top-content {
 	width: 100%;
 	color: white;
 }
 
-#top h1 {
+#top-total {
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
 	justify-content: center;
-	font-size: 5em;
-}
-
-#top p {
-	align-self: center;
-	font-style: italic;
+	align-items: center;
 }
 
 #get-started {
-	position: absolute;
+	position:absolute;
 	bottom: 10vh;
 	left: 47vw;
 }
@@ -54,7 +75,7 @@ p {
 i {
     border: solid black;
     border-width: 0 3px 3px 0;
-    display: inline-block;
+    display: none;
     padding: 3px;
 }
 
@@ -74,11 +95,13 @@ i {
 
 #timer label {
 	padding: 0px 3px 0px 3px;
+	height: auto;
 }
 
 #timer .container {
 	padding: 2vh 2vh 2vh 2vh;
 	top: 50%;
+	height: 100%;
 }
 
 #intro {
@@ -86,20 +109,18 @@ i {
 }
 
 #intro-content {
-	position: relative;
-	top: 30%;
-	color: white;
-	align-items: center;
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	align-self: center;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 80%;
 }
 
 .intro-para {
+	position: relative;
+	top: 40%;
 	text-align: center;
-}
-
-#intro1 {
-
 }
 
 #footer {
@@ -112,4 +133,98 @@ i {
 
 #footer-bar li {
 	align-self: center;
+}
+
+#contact {
+	background-image: url('contact-bg.jpg')
+}
+
+#contact .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+/* About section */
+
+#about-top {
+	background-image: url('about-main.jpg');
+	color: white;
+}
+
+#about-top-content {
+	position: relative;
+	top: 40%;
+}
+
+#about-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 80%;
+}
+
+.about-para {
+	position: relative;
+	top: 40%;
+	text-align: center;
+}
+
+/* Experience Section */
+
+#experience-top {
+	background-image: url('experience.jpg');
+	color: black;
+}
+
+#experience-top-content {
+	position: relative;
+	top: 40%;
+}
+
+#experience-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 80%;
+}
+
+.experience-para {
+	position: relative;
+	top: 40%;
+	text-align: center;
+}
+
+/* Reach out section */
+
+#reach-out-top {
+	background-color: gray;
+}
+
+#reach-out-top .container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	top: 20%;
+}
+
+#reach-out-top h2 {
+	position: relative;
+	top: 10%;
+}
+
+#inform {
+	display: none;
+}
+
+#reach-out div {
+	overflow: scroll;
 }
